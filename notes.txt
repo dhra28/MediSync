@@ -1,0 +1,4 @@
+Ideas:
+- Add patient search feature
+- Improve UI later
+- Add database support
