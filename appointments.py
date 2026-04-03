@@ -1,15 +1,14 @@
-class Appointment:  
-    def __init__(self, patient_name, doctor_name, date, time, city, state):  
-        self.patient_name = patient_name  
-        self.doctor_name = doctor_name  
-        self.date = date  
-        self.time = time  
-        self.city = city  
-        self.state = state  
+class Appointment:
+    def __init__(self, patient_name, doctor_name, date, time, location):
+        self.patient_name = patient_name
+        self.doctor_name = doctor_name
+        self.date = date
+        self.time = time
+        self.location = location
 
-    def schedule(self):  
-        return (f"Appointment scheduled for {self.patient_name} with Dr. {self.doctor_name} "  
-                f"on {self.date} at {self.time} in {self.city}, {self.state}.")  
+
+    def schedule(self):
+        return f"Appointment scheduled for {self.patient_name} with Dr. {self.doctor_name} on {self.date} at {self.time}."
 
 # Sample usage  
 if __name__ == "__main__":  
