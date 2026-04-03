@@ -1,15 +1,12 @@
 class Patient:
-    def __init__(self, name, age, disease):
+    def __init__(self, name, age, condition):
         self.name = name
         self.age = age
-        self.disease = disease
+        self.condition = condition
 
-    def get_details(self):
-        return f"{self.name} ({self.age}) - {self.disease}"
+    def display_info(self):
+        return f"Patient: {self.name}, Age: {self.age}, Condition: {self.condition}"
 
 if __name__ == "__main__":
-    p1 = Patient("Alice", 30, "Flu")
-    p2 = Patient("Bob", 50, "Hypertension")
-
-    print(p1.get_details())
-    print(p2.get_details())
+    patient1 = Patient("John Doe", 45, "Diabetes")
+    print(patient1.display_info())
